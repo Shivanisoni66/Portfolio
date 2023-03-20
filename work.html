@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <style>
+        html,
+        body {
+            position: relative;
+        }
+
+        body {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+
+        .swiper {
+            width: 100%;
+            height: calc(100% - 160px);
+            padding-top: 50px;
+            padding-bottom: 50px;
+            position: absolute;
+            top: 80px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+
+        }
+
+        .swiper-slide img {
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        .work {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #821E8E, #310371, #535FAE, #D849C2);
+            padding: 50px;
+        }
+
+        .work .showcase {
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff4d;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 0px 70px;
+
+        }
+
+        .work .showcase .card {
+            width: 600px;
+            height: 270px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            border: 5px solid #fff;
+        }
+
+        .work .showcase .card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .work .showcase .card a {
+            width: 100%;
+            height: 40px;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 10px;
+            text-decoration: none !important;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="back">
+        <!-- <img class="design" src="./design.gif" /> -->
+        <nav>
+            <div class="links">
+                <a href="/">Home</a>
+                <a href="">Contact</a>
+                <a href="https://github.com/Shivanisoni66" target="_blank">Github</a>
+            </div>
+        </nav>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./Clothes_brand.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./modern_sound.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./proflie_page.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./saloon_portfolio.png" />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="work">
+        <div class="showcase">
+            <div class="card"><img src="./img1.png" alt="">
+                <a href="https://shivanisoni66.github.io/hasnas_accounting/" target="_blank">view <i style="margin-left: 10px;" class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+            <div class="card"><img src="./img2.png" alt="">
+                <a href="https://shivanisoni66.github.io/FOODIE_PAGE/" target="_blank">view <i style="margin-left: 10px;" class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+            <div class="card"><img src="./img3.png" alt="">
+                <a href="https://shivanisoni66.github.io/BinzooZono/" target="_blank">view <i style="margin-left: 10px;" class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+            <div class="card"><img src="./img4.png" alt="">
+                <a href="https://shivanisoni66.github.io/Natural-Blend" target="_blank">view <i style="margin-left: 10px;" class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+</body>
+
+</html>
